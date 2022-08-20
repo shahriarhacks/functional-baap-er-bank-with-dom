@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Ka Bank</title>
+    <!-- Bootstrap CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1 class="header-center mt-5 text-center">Let's Pay with <span class="text-warning">Finen</span><span
+                class="text-primary">Pay</span></h1>
+    </header>
+
+    <main>
+        <section class="container mt-5">
+            <div class="container px-4 text-center">
+                <div class="row g-5">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="p-3 border bg-info rounded p-4 text-white">
+                            <h3>Deposite</h3>
+                            <h2>$<span id="deposite-total">00</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="p-3 border bg-secondary rounded p-4 text-white">
+                            <h3>Blance</h3>
+                            <h2>$<span id="blance-total">810</span></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="p-3 border bg-success rounded p-4 text-white">
+                            <h3>Withdraw</h3>
+                            <h2>$<span id="withdraw-total">00</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mt-5">
+            <div class="container overflow-hidden text-center">
+                <div class="row g-5">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="border p-5 rounded background-deposite">
+                            <h2>Deposite</h2>
+                            <input type="number" id="deposite-amount" class="d-block mt-4 w-100 rounded"
+                                placeholder="Say Amount to Deposite">
+                            <button id="deposite-button"
+                                class="btn btn-primary text-white fw-semibold mt-3">Deposite</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="p-5 rounded border background-withdraw">
+                            <h2>Withdraw</h2>
+                            <input type="number" id="withdraw-amount" class="d-block mt-4 w-100 rounded"
+                                placeholder="Say Amount to Withdraw">
+                            <button id="withdraw-button"
+                                class="btn btn-warning text-white fw-semibold mt-3">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS Bundile Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <!-- Script File to JS -->
+    <script src="./script/main.js"></script>
+</body>
+
+</html>
